@@ -1,0 +1,85 @@
+/* 🌅 Fondo suave */
+html, body {
+  background: linear-gradient(to bottom, #fdf2e9, #f6d365);
+  font-family: 'Poppins', sans-serif;
+  min-height: 100%;
+  padding-top: 70px;
+  overflow-x: hidden;
+}
+
+/* 🌟 Navbar moderna */
+.navbar {
+  background-color: #0d3b66 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Links del menú */
+.navbar .nav-link {
+  color: white !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #ffc107 !important;
+}
+
+/* Marca */
+.navbar-brand {
+  color: #ffc107 !important;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item:hover {
+  background-color: #ffc107 !important;
+  color: #212529 !important;
+}
+
+/* Botón buscar */
+.btn-outline-warning {
+  border-color: #ffc107;
+  color: #ffc107;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-warning:hover {
+  background-color: #ffc107;
+  color: #0d3b66;
+}
+
+/* Ajustes de colapso responsivo */
+.navbar-collapse {
+  flex-wrap: nowrap !important;
+}
+
+.navbar-nav.mx-auto {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+form.d-flex {
+  white-space: nowrap;
+}
+
+.navbar-nav.mb-2.mb-lg-0 {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* 🛍️ Contador del carrito */
+#contadorCarrito {
+  font-size: 0.75rem;
+  padding: 3px 6px;
+  border-radius: 50%;
+  min-width: 18px;
+  min-height: 18px;
+}

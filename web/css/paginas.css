@@ -1,0 +1,55 @@
+/* Fondo general */
+html, body {
+    background: linear-gradient(to bottom, #fdf2e9, #f6d365) !important;
+    min-height: 100%;
+}
+
+
+
+/* Banners */
+.banner-img {
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Hero */
+.hero h1 {
+  font-size: 2.5rem;
+  color: #0d3b66;
+}
+.hero p {
+  color: #495057;
+  font-size: 1.2rem;
+}
+
+/* Categorías */
+.categoria-card {
+  border: none;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.categoria-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+.categoria-card img {
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #e9ecef;
+}
+.categoria-card .card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #0d3b66;
+}
+
+/* Footer */
+footer {
+  background: #0d3b66 !important;
+  color: #fff;
+  font-size: 0.9rem;
+}
