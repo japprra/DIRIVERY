@@ -22,7 +22,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
     <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="${pageContext.request.contextPath}/index.htm">DIRI VERY</a>
+        <a class="navbar-brand fw-bold" href="${pageContext.request.contextPath}/">DIRI VERY</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                 aria-controls="navbarContent" aria-expanded="false" aria-label="Mostrar/Ocultar menú">
             <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
             <!-- Menú principal -->
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/index.htm">Inicio</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/">Inicio</a>
                 </li>
 
                 <li class="nav-item dropdown">

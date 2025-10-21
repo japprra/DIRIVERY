@@ -44,7 +44,7 @@
       <div class="col">
         <a href="${pageContext.request.contextPath}/polo.htm?categoria=polos"
            class="card categoria-card text-decoration-none h-100">
-          <img src="${pageContext.request.contextPath}/img/anillo.jpg" class="card-img-top" alt="Artesanía y cultura">
+          <img src="${pageContext.request.contextPath}img/anillo.jpg" class="card-img-top" alt="Artesanía y cultura">
           <div class="card-body text-center">
             <h5 class="card-title">Artesanía y cultura</h5>
           </div>
