@@ -24,7 +24,7 @@ private JdbcTemplate jdbcTemplate;
     @Autowired
     private ProductoDAO productoDAO;
 
-    @GetMapping({"", "/inde x.htm"})
+    @GetMapping({"", "/index.htm"})
     public ModelAndView mostrarTodoProductos() {
         List<Producto> productos = productoDAO.listarTodos();
         ModelAndView mav = new ModelAndView("index");

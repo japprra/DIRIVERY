@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 
 public class testBD {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/proyecto?useSSL=false&serverTimezone=UTC";
+        String url = "jdbc:mysql://localhost:3307/proyecto?useSSL=false&serverTimezone=UTC";
         String user = "root";
-        String pass = "root";
+        String pass = "2008";
 
         try (Connection conn = DriverManager.getConnection(url, user, pass)) {
             if (conn != null && !conn.isClosed()) {
