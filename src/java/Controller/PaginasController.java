@@ -17,13 +17,13 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @Controller
 @RequestMapping("/")
 public class PaginasController {
-    
+    //Prueva de actualización para git Hub
 @Autowired
 private JdbcTemplate jdbcTemplate;
-
+//Prueva de actualización para git Hub
     @Autowired
     private ProductoDAO productoDAO;
-
+//Prueva de actualización para git Hub
     @GetMapping({"", "/index.htm"})
     public ModelAndView mostrarTodoProductos() {
         List<Producto> productos = productoDAO.listarTodos();
