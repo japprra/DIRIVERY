@@ -85,7 +85,7 @@ public class Producto {
         this.descripcion = descripcion;
     }
     
-    // 🔹 Getters y Setters nuevos para proveedor
+    // Getters y Setters nuevos para proveedor
     public Integer getIdproveedor() {
         return idproveedor;
     }

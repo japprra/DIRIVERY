@@ -11,7 +11,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-//  Importamos utilidades Guava
+//  Importamos utilidades Guava 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
 import com.google.common.collect.ImmutableList;
@@ -22,7 +22,7 @@ public class ProductoDAO {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    // ✅ Listar todos los productos (con nombre del proveedor)
+    // Listar todos los productos (con nombre del proveedor)
     public List<Producto> listarTodos() {
         String sql = """
             SELECT p.*, pr.nombre AS proveedorNombre
@@ -32,7 +32,7 @@ public class ProductoDAO {
         return jdbcTemplate.query(sql, new ProductoMapper());
     }
 
-    // ✅ Buscar por palabra clave (nombre o clave)
+    // Buscar por palabra clave (nombre o clave)
     public List<Producto> buscar(String query) {
         // 🟢 Usamos Guava para evitar errores si query viene nulo o vacío
         String keyword = "%" + Strings.nullToEmpty(query).trim() + "%";
@@ -49,7 +49,7 @@ public class ProductoDAO {
         return ImmutableList.copyOf(resultados);
     }
 
-    // ✅ Buscar por categoría o clave
+    // Buscar por categoría o clave
     public List<Producto> listarPorClave(String clave) {
         Preconditions.checkArgument(!Strings.isNullOrEmpty(clave), "La clave no puede ser nula ni vacía");
 
@@ -64,7 +64,7 @@ public class ProductoDAO {
         return ImmutableList.copyOf(lista);
     }
 
-    // ✅ Buscar un producto por ID
+    // Buscar un producto por ID
     public Producto obtenerPorId(int id) {
         Preconditions.checkArgument(id > 0, "El ID del producto debe ser positivo");
 
@@ -76,12 +76,12 @@ public class ProductoDAO {
         """;
 
         Producto p = jdbcTemplate.queryForObject(sql, new ProductoMapper(), id);
-        // 🟢 Validamos que el producto realmente exista
+        // Validamos que el producto realmente exista
         Preconditions.checkNotNull(p, "No se encontró producto con ID: %s", id);
         return p;
     }
 
-    // ✅ Verificar stock
+    // Verificar stock
     public int obtenerStockPorId(int id) {
         Preconditions.checkArgument(id > 0, "El ID debe ser mayor a 0");
 
@@ -94,7 +94,7 @@ public class ProductoDAO {
         }
     }
 
-    // ✅ Mapper interno (mapea todos los campos, incluido el proveedor)
+    // Mapper interno (mapea todos los campos, incluido el proveedor)
     private static class ProductoMapper implements RowMapper<Producto> {
         @Override
         public Producto mapRow(ResultSet rs, int rowNum) throws SQLException {
